@@ -1,4 +1,4 @@
-#  SQL Server İşlemleri Rehberi
+<img width="299" height="143" alt="image" src="https://github.com/user-attachments/assets/f3e9e485-3e89-40d0-a10a-000edd38c672" />#  SQL Server İşlemleri Rehberi
 
 Bu rehber, Microsoft SQL Server kullanarak veritabanı yönetiminin temellerini daha iyi anlayabilmek hazırlanmıştır. Adım adım bir veritabanı oluşturacak, tablolarımızı ayarlayacak ve veri ekleme/güncelleme işlemlerini gerçekleştireceğiz.
 
@@ -72,6 +72,7 @@ VALUES
 ('Zeynep','Koyun','BP'),
 ('Burak','Çetin','BP')
 ```
+<img width="299" height="143" alt="image" src="https://github.com/user-attachments/assets/5acb30fe-95e2-48e5-9489-e5413c9b3ad0" />
 
 *Verileri okumak istersen `SELECT * FROM Ogrenciler;` komutunu çalıştırarak eklenen verileri ve otomatik oluşan ID'leri görebilirsin.*
 
