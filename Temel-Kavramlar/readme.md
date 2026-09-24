@@ -14,9 +14,11 @@ CREATE DATABASE Okul;
 
 -- Oluşturduğumuz veritabanını kullanmaya başlamak için USE komutunu veririz.
 -- Bu komut, bundan sonraki işlemlerin "Okul" içinde yapılacağını belirtir.
-USE Okul;
 ```
-
+Ardından 
+```sql
+USE okul;
+```
 ---
 
 ## 2. Tablo Oluşturma, Sütun ve Kolon Ayarları (CREATE TABLE)
