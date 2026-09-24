@@ -72,7 +72,6 @@ VALUES
 ('Zeynep','Koyun','BP'),
 ('Burak','Çetin','BP')
 ```
-<img width="299" height="143" alt="image" src="https://github.com/user-attachments/assets/5acb30fe-95e2-48e5-9489-e5413c9b3ad0" />
 
 *Verileri okumak istersen `SELECT * FROM Ogrenciler;` komutunu çalıştırarak eklenen verileri ve otomatik oluşan ID'leri görebilirsin.*
 
@@ -90,9 +89,10 @@ Ramazan'ın bölümünü değiştirelim, Ramazan'ın `OgrenciID`'sinin 1 olduğu
 
 ```sql
 UPDATE Ogrenciler
-SET Bolum = "Sivil Havacılık"
+SET Bolum = 'Sivil Havacılık'
 WHERE OgrenciID = 1;
 ```
+<img width="352" height="137" alt="image" src="https://github.com/user-attachments/assets/275d36e5-4acd-4dc0-8dfa-9c81b0bf6f86" />
 
 ### Örnek 2: Koşula uyan birden fazla kaydı güncelleme
 Bölümü 'BP' olan herkesin adını değiştirelim.
@@ -102,6 +102,7 @@ UPDATE Ogrenciler
 SET Ad = 'TEST'
 WHERE Bolum = 'BP';
 ```
+<img width="382" height="131" alt="image" src="https://github.com/user-attachments/assets/fb3e005e-c08d-4766-bbd8-997ade4d4cd9" />
 
 ---
 
