@@ -17,7 +17,7 @@ CREATE DATABASE Okul;
 ```
 Ardından 
 ```sql
-USE okul;
+USE Okul;
 ```
 ---
 
