@@ -79,7 +79,7 @@ VALUES
 <img width="299" height="143" alt="image" src="https://github.com/user-attachments/assets/f3e9e485-3e89-40d0-a10a-000edd38c672" />
 ---
 
-## 5. Veri Güncelleme (UPDATE)
+## 5. Veri Güncelleme (UPDATE) // DERSTE GÖRMEDİK, İLERİYE HAZIRLIK
 
 Tablodaki mevcut bir veriyi değiştirmek istediğimizde `UPDATE` komutunu kullanırız. 
 
