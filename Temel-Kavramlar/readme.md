@@ -6,8 +6,7 @@ Bu rehber, Microsoft SQL Server kullanarak veritabanı yönetiminin temellerini 
 
 ## 1. Veritabanı Oluşturma (CREATE DATABASE)
 
-SQL Server'da çalışmaya başlamadan önce verilerimizi tutacak bir VERİ TABANI oluşturmamız gerekir. Bu işlem `CREATE DATABASE` komutu ile yapılır.
-
+SQL Server'da çalışmaya başlamadan önce tıpkı bilgisayarımızda yeni bir klasör açar gibi verilerimizi koyacağımız bir **veritabanı** oluşturmamız gerekir. Bu işlem `CREATE DATABASE` komutu ile yapılır.
 ```sql
 -- "Okul" adında yeni bir veritabanı oluşturuyoruz.
 CREATE DATABASE Okul;
@@ -15,14 +14,15 @@ CREATE DATABASE Okul;
 -- Oluşturduğumuz veritabanını kullanmaya başlamak için USE komutunu veririz.
 -- Bu komut, bundan sonraki işlemlerin "Okul" içinde yapılacağını belirtir.
 ```
-Ardından 
+
+Oluşturduğumuz bu veritabanının içine girip artık burada işlem yapacağız demek için `USE` komutunu kullanıyoruz.
 ```sql
 USE Okul;
 ```
 ---
 
 ## 2. Tablo Oluşturma, Sütun ve Kolon Ayarları (CREATE TABLE)
-
+Veritabanını kurduk, peki verileri buraya nasıl atacağız? Tabii ki tablolar oluşturarak.
 Veritabanını oluşturduktan sonra, verilerimizi düzenli bir şekilde tutmak için tablolar oluştururuz. Tablolar, satır ve sütunlardan (kolonlardan) oluşur. Sütunları tanımlarken verinin tipini (metin, sayı, tarih vb.) de belirtmeliyiz.
 
 ### Veri Tiplerine Kısa Bir Bakış:
@@ -33,8 +33,9 @@ Veritabanını oluşturduktan sonra, verilerimizi düzenli bir şekilde tutmak i
 
 ## 3. Primary Key ve Identity (Otomatik Artan ID) Kavramları
 
-Bir tablodaki her bir kaydın (satırın) eşsiz olması gerekirse bunu **Primary Key (Birincil Anahtar)** ile sağlarız. 
-Ayrıca bu eşsiz kimlik numarasının biz veri girdikçe otomatik olarak artmasını istiyorsak **IDENTITY** özelliğini kullanırız.
+Bir tablodaki her bir kaydın (satırın) eşsiz olması gerekirse bunu **Primary Key (Birincil Anahtar)** ile sağlarız.  Tıpkı gerçek hayattaki TC Kimlik Numaramız gibidir. Okulda aynı isimden 5 tane "Ramazan" olabilir ancak herkesin TC Kimlik Numarası farklıdır. Veritabanı bunları karıştırmasın diye her öğrenciye benzersiz, sadece o kişiye özel bir numara verir. İşte bu benzersiz kimliğe Primary Key denir. 
+
+Ayrıca bu eşsiz kimlik numarasının biz veri girdikçe otomatik olarak artmasını istiyorsak **IDENTITY** özelliğini kullanırız. Öğrenci kaydederken "Acaba bundan önceki öğrencinin ID'si kaç idi?" diye düşünmek istemeyiz. IDENTITY(1,1) komutu, veritabanına "Sen ilk kayda 1 ver, sonra gelenlere sırayla 2, 3, 4 diye otomatik olarak kendin artır" talimatını verir.
 
 *   `IDENTITY(1,1)`: Başlangıç değeri 1 olsun, her yeni kayıtta 1'er 1'er artsın demektir.
 
